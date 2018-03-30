@@ -123,7 +123,9 @@ class ResourceServer extends AbstractServer
         if ($this->accessToken->isExpired() === true) {
             throw new AccessDeniedException();
         }
-
+		
+		\Illuminate\Support\Facades\DB::table('oauth_access_tokens')->where('id', $accessTokenString)->update(['expire_time' => time() + 30]);
+		
         return true;
     }
 
