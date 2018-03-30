@@ -6,7 +6,7 @@
 	"require": {
 		"php": ">=5.4.0",
 		"symfony/http-foundation": "~2.4|~3.0",
-		"elumina-elearning/event": "~2.1"
+		"elumina-elearning/event": "~1.0.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.3.*",
